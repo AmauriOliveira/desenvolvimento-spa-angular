@@ -11,6 +11,7 @@ import { ContatoComponent } from './institucional/contato/contato.component';
 import { CreateComponent } from './print/create/create.component';
 import { GenerateComponent } from './print/generate/generate.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
   ],
   providers: [],
