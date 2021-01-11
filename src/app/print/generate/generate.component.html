@@ -1,9 +1,9 @@
-<button (click)="onPrint()">teste</button>
-<div #draw name="draw" class="container">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+<button class="btn btn-primary" (click)="onPrint()">Gerar PDF</button>
+<div #draw  class="container">
+  <div class="row row-cols-2 row-cols-md-4 g-4">
     <div class="col" *ngFor="let card of cards">
-      <div class="card h-100 b1">
-        <img src="{{ card.imageUrl }}" height="200" alt="{{ card.word }}" />
+      <div class="card b1">
+        <img [src]="card.imageUrl" [alt]="card.word" />
         <div class="card-body b1">
           <h2>
             {{ card.word }}
